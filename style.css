@@ -4,10 +4,6 @@
     --light-color: rgb(235,229,215)
 }
 
-@font-face{
-    font-family: 'title';
-    src: url('./assets/fonts/sho-card-caps.regular.ttf'); 
-  }
 
 body{
     background-color: var(--light-color);
@@ -16,8 +12,33 @@ body{
 }
 
 header{
-    height: 75px;
     background-color: var(--accent-light);
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-color);;
+}
+
+ul{
+    text-decoration: none;
+    color: var(--light-color);
+    list-style-type: none;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 5px
+}
+
+li{
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+li:hover{
+    border: 1px solid var(--accent-color);
+    border-radius: 11px;
+    background-color: var(--accent-color);
 }
 
 hero > Img{
@@ -112,6 +133,10 @@ p{
 
     .separator{
         width:auto;
+    }
+
+    li{
+        font-size: 1.5rem;
     }
 
     #heroImgSmall{
