@@ -1,0 +1,125 @@
+:root{
+    --accent-color: rgb(163, 41, 39);
+    --accent-light: rgb(201, 102, 96);
+    --light-color: rgb(235,229,215)
+}
+
+@font-face{
+    font-family: 'title';
+    src: url('./assets/fonts/sho-card-caps.regular.ttf'); 
+  }
+
+body{
+    background-color: var(--light-color);
+    text-align: center;
+    margin:0;
+}
+
+header{
+    height: 75px;
+    background-color: var(--accent-light);
+}
+
+hero > Img{
+    width: 100vw;
+    margin:0;
+}
+
+#heroImgWide{
+    display: none;
+}
+
+.btn{
+    margin: 100px 0;
+    background-color: var(--accent-color);
+    color: var(--light-color);        
+    transition: transform .4s; /* Animation */
+    box-shadow: 5px 5px 20px rgb(50,50,50);
+    border-color: transparent;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 20px;
+    font-size: 2rem;
+    clip-path: polygon(100% 0%, 93% 13%, 99% 27%, 93% 42%, 99% 54%, 94% 67%, 100% 79%, 93% 89%, 100% 100%, 0% 100%, 8% 89%, 1% 76%, 7% 63%, 0% 50%, 7% 36%, 0% 26%, 6% 13%, 0% 0%);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+h1{
+    font-family: title;
+    font-size: 5rem;
+    color: white;
+}
+
+h2, p{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--accent-color)
+}
+
+h2{
+    margin: 5px 0px;
+    font-size: 1.1em;
+}
+
+p{ 
+    margin: 0;
+}
+
+.card{
+    border-radius: 11px;
+    border: 1px solid var(--accent-color);
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 300px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+}
+
+.text{
+    padding: 22px;
+}
+
+.separator{
+    margin: 110px 0px;
+    width:200px
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA      */
+
+@media screen and (min-width: 550px) {
+    .btn{
+        padding: 10px 120px;
+        font-size: 5rem;        
+    }
+
+    .separator{
+        width:auto;
+    }
+
+    #heroImgSmall{
+        display: none;
+    }
+
+    #heroImgWide{
+        display: block;
+    }
+
+}
