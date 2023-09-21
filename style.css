@@ -1,24 +1,31 @@
 :root{
     --accent-color: rgb(163, 41, 39);
-    --accent-light: rgb(201, 102, 96);
+    --accent-light: rgb(194, 92, 87);
     --light-color: rgb(235,229,215)
 }
 
+a{
+    text-decoration: none;
+    color: var(--light-color);
+}
 
 body{
     background-color: var(--light-color);
     text-align: center;
     margin:0;
+    overflow-x: hidden;
 }
 
 header{
     background-color: var(--accent-light);
+    position: fixed;
+    height: 3.1rem;
+    width: 100%;
+    z-index: 999;
+
 }
 
-a{
-    text-decoration: none;
-    color: var(--light-color);;
-}
+
 
 ul{
     text-decoration: none;
@@ -26,6 +33,7 @@ ul{
     list-style-type: none;
     margin: 0;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
     padding: 5px
 }
 
@@ -33,17 +41,23 @@ li{
     border: 1px solid transparent;
     display: inline-block;
     padding: 5px 15px;
+    color: var(--light-color);
 }
 
 li:hover{
-    border: 1px solid var(--accent-color);
     border-radius: 11px;
-    background-color: var(--accent-color);
+    border: 1px solid var(--light-color);
+}
+
+hero{
+    display: block;
+    height: 90vh;
 }
 
 hero > Img{
     width: 100vw;
     margin:0;
+    padding-top: 3rem;
 }
 
 #heroImgWide{
@@ -51,22 +65,29 @@ hero > Img{
 }
 
 .btn{
-    margin: 100px 0;
     background-color: var(--accent-color);
+    border-radius: 8px;
     color: var(--light-color);        
-    transition: transform .4s; /* Animation */
-    box-shadow: 5px 5px 20px rgb(50,50,50);
     border-color: transparent;
+    transition: .4s; /* Animation */
     font-family: 'Bebas Neue', sans-serif;
     padding: 20px;
     font-size: 2rem;
-    clip-path: polygon(100% 0%, 93% 13%, 99% 27%, 93% 42%, 99% 54%, 94% 67%, 100% 79%, 93% 89%, 100% 100%, 0% 100%, 8% 89%, 1% 76%, 7% 63%, 0% 50%, 7% 36%, 0% 26%, 6% 13%, 0% 0%);
+    }
+
+
+.container{    
+    margin: 100px 0;
+    filter: drop-shadow(0px 6px 3px rgba(50, 50, 0, 0.5));
+    transition: .4s; /* Animation */
+    display: inline-block;
+    
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.container:hover{    
+    filter: drop-shadow(5px 26px 5px rgba(50, 50, 0, 0.9));
+    transform: scale(1.1) translateY(-15px);
 }
-
 
 h1{
     font-family: title;
@@ -89,8 +110,6 @@ p{
 }
 
 .card{
-    border-radius: 11px;
-    border: 1px solid var(--accent-color);
     display: inline-block;
     text-align: left;
     margin: 10px;
@@ -101,21 +120,34 @@ p{
 }
 
 .card img{
+    border-radius: 11px;
     width: 100%;
     height: 250px;
 }
 
 .text{
-    padding: 22px;
+    padding: 7px;
 }
 
 .separator{
-    margin: 110px 0px;
+    margin: 10px 0px;
     width:200px
 }
 
+#quotes{
+    margin: 10rem 0;
+}
 
+footer{
+    background-color: var(--accent-color);
+    padding: 20px;
+    margin-top:20px
+}
 
+footer p{
+    
+    color: var(--light-color);
+}
 
 
 
@@ -127,7 +159,7 @@ p{
 
 @media screen and (min-width: 550px) {
     .btn{
-        padding: 10px 120px;
+        padding: 10px 90px;
         font-size: 5rem;        
     }
 
