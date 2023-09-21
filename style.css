@@ -90,9 +90,10 @@ hero > Img{
 }
 
 h1{
-    font-family: title;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;
-    color: white;
+    color: var(--accent-color);
+
 }
 
 h2, p{
@@ -116,7 +117,6 @@ p{
     min-width: 250px;
     max-width: 300px;
     overflow: hidden;
-    height: 400px;
 }
 
 .card img{
@@ -140,8 +140,8 @@ p{
 
 footer{
     background-color: var(--accent-color);
-    padding: 20px;
-    margin-top:20px
+    padding: 50px;
+    margin-top:50px
 }
 
 footer p{
