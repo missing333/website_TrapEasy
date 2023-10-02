@@ -94,7 +94,7 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;
     color: var(--accent-color);
-
+    margin: 0px 0px;    
 }
 
 h2, p{
@@ -131,13 +131,11 @@ p{
 }
 
 .separator{
-    margin: 10px 0px;
+    margin: 100px 0px;
     width:200px
 }
 
-#quotes{
-    margin: 10rem 0;
-}
+
 
 footer{
     background-color: var(--accent-color);
